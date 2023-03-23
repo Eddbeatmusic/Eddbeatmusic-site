@@ -68,7 +68,7 @@ const Footer = () => {
               >
                 <Typography
                   variant="h6"
-                  color="primary"
+                  color={theme.palette.primary.main}
                   sx={{ pr: 5, textTransform: 'uppercase' }}
                 >
                   {item.title}
@@ -86,7 +86,7 @@ const Footer = () => {
                 >
                   <Typography
                     variant="subtitle5"
-                    color={pathname === item.path ? "primary" : "secondary"}
+                    color={pathname === item.path ? theme.palette.primary.main : theme.palette.secondary.main}
                     sx={{ textTransform: 'uppercase' }}
                   >
                     {pathname === item.path ? 'YOU ARE HERE' : item.sub}
@@ -111,11 +111,11 @@ const Footer = () => {
           </Grid>
           <Grid item container xs={12} md={6}>
             <Grid item xs={7}>
-              <Typography variant="subtitle4" color="primary">
+              <Typography variant="subtitle4" color={theme.palette.primary.main}>
                 Drop me a line
               </Typography>
               <Typography
-                color="primary"
+                color={theme.palette.primary.main}
                 sx={{ overflowWrap: 'break-word', paddingTop: 2 }}
                 variant="h6"
                 id="contact-footer"
@@ -183,7 +183,7 @@ const Footer = () => {
         >
           <Typography
             variant="subtitle5"
-            color="primary"
+            color={theme.palette.primary.main}
             sx={{ textTransform: 'uppercase' }}
           >
             Copied to ClipBoard
