@@ -1,14 +1,14 @@
 @font-face {
-  font-family: Hebden Grotesque;
-  src: url('/public/typography/Hebden_Grotesque.ttf') format('ttf');
+  font-family: 'Hebden Grotesque';
+  src: url('/typography/Hebden_Grotesque.ttf') format('truetype');
 }
 @font-face {
-  font-family: Andale Mono;
-  src: url('/public/typography/Andale_Mono.ttf') format('ttf');
+  font-family: 'Andale Mono';
+  src: url('/typography/Andale_Mono.ttf') format('truetype');
 }
 @font-face {
-  font-family: Andale Mono Italic;
-  src: url('/public/typography/Andale_Mono_Italic.ttf') format('ttf');
+  font-family: 'Andale Mono Italic';
+  src: url('/typography/Andale_Mono_Italic.ttf') format('truetype');
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: Hebden Grotesque, Andale Mono, Andale Mono Italic;
+  font-family: 'Hebden Grotesque', 'Andale Mono', 'Andale Mono Italic';
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -28,7 +28,7 @@ body {
 #__next {
   padding: 0;
   margin: 0;
-  font-family: Hebden Grotesque, Andale Mono, Andale Mono Italic;
+  font-family: 'Hebden Grotesque', 'Andale Mono', 'Andale Mono Italic';
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;

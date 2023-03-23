@@ -17,7 +17,9 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Hebden Grotesque, Andale Mono, Andale Mono Italic',
+    fontFamily: ['Hebden Grotesque', 'Andale Mono', 'Andale Mono Italic'].join(
+      ',',
+    ),
     fontSize: 16,
     '@media (min-width:600px)': {
       fontSize: 12,
