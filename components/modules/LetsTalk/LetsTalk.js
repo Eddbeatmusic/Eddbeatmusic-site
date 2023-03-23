@@ -8,7 +8,7 @@ const LetsTalk = () => {
   const router = useRouter();
   return (
     <Box position="relative" width="100%">
-      <video autoPlay loop muted>
+      <video autoPlay loop muted width="100%">
         <source src={background} type="video/mp4" />
       </video>
       <Box

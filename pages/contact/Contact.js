@@ -97,7 +97,13 @@ const Contact = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Image src={picture} alt="Eduardo laughing looking at a screen" />
+      <Box width="100vw">
+        <Image
+          src={picture}
+          alt="Eduardo laughing looking at a screen"
+          objectFit="cover"
+        />
+      </Box>
     </>
   );
 };
