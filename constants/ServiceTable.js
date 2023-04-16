@@ -22,7 +22,7 @@ const Table = [
     software: 'FMOD\nWwise',
   },
   {
-    column1: 'Advising',
+    column1: 'Advising/QA',
     info1: 'Assistance, feedback, insight and vision for sound & music.',
     skills:
       'Assessment of the needs and possibilities for your project, sound wise. Review and assurance of assets that already exist within it.',

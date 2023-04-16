@@ -89,7 +89,7 @@ const Footer = () => {
                     color={
                       pathname === item.path
                         ? theme.palette.primary.main
-                        : theme.palette.secondary.main
+                        : 'black'
                     }
                     sx={{ textTransform: 'uppercase' }}
                   >
