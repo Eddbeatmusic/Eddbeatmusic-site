@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -18,10 +18,13 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
   };
 
   return (
-    <Box 
+    <Box
       className="collapsible-item"
       paddingY={6}
-      sx={{ borderBottom: open && '0.13em solid rgba(0, 0, 0, 1) !important', cursor: 'pointer'}}
+      sx={{
+        borderBottom: open && '0.13em solid rgba(0, 0, 0, 1) !important',
+        cursor: 'pointer',
+      }}
       onClick={() => handleClick()}
     >
       <Box
@@ -33,49 +36,55 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
           <Grid item xs={5} paddingRight={2}>
             <Typography
               variant="h5"
-              color='secondary'
+              color="secondary"
               sx={{
                 textTransform: 'uppercase',
                 display: 'block',
               }}
-              >
+            >
               {item.column1}
             </Typography>
           </Grid>
           <Grid item xs={4} paddingRight={4}>
             <Typography
               variant="subtitle4"
-              color='secondary'
+              color="secondary"
               sx={{
                 textTransform: 'uppercase',
                 display: 'block',
                 textDecoration: 'underline',
-                textDecorationThickness: '1px'
+                textDecorationThickness: '1px',
               }}
-              >
+            >
               Skills
             </Typography>
           </Grid>
           <Grid item xs={2}>
             <Typography
               variant="subtitle4"
-              color='secondary'
+              color="secondary"
               sx={{
                 textTransform: 'uppercase',
                 display: 'block',
                 textDecoration: 'underline',
-                textDecorationThickness: '1px'
+                textDecorationThickness: '1px',
               }}
-              >
+            >
               Software
             </Typography>
           </Grid>
-          <Grid item container xs={1} justifyContent='flex-end' alignItems="center">
-            {open ?
-              <Image src={RemoveIcon} />
-              : 
-              <Image src={AddIcon} />
-            }
+          <Grid
+            item
+            container
+            xs={1}
+            justifyContent="flex-end"
+            alignItems="center"
+          >
+            {open ? (
+              <Image src={RemoveIcon} alt="Collapse" />
+            ) : (
+              <Image src={AddIcon} alt="Expand" />
+            )}
           </Grid>
         </Grid>
       </Box>
@@ -84,39 +93,39 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
           <Grid item xs={5} paddingRight={2}>
             <Typography
               variant="subtitle4"
-              color='secondary'
+              color="secondary"
               sx={{
                 textTransform: 'uppercase',
                 display: 'block',
-                whiteSpace: 'pre-wrap'
+                whiteSpace: 'pre-wrap',
               }}
             >
-             {item.info1}
+              {item.info1}
             </Typography>
           </Grid>
           <Grid item xs={4} paddingRight={4}>
             <Typography
               variant="subtitle4"
-              color='secondary'
+              color="secondary"
               sx={{
                 textTransform: 'uppercase',
                 display: 'block',
-                whiteSpace: 'pre-wrap'
+                whiteSpace: 'pre-wrap',
               }}
-              >
+            >
               {item.skills}
             </Typography>
           </Grid>
           <Grid item xs={2}>
             <Typography
               variant="subtitle4"
-              color='secondary'
+              color="secondary"
               sx={{
                 textTransform: 'uppercase',
                 display: 'block',
-                whiteSpace: 'pre-wrap'
+                whiteSpace: 'pre-wrap',
               }}
-              >
+            >
               {item.software}
             </Typography>
           </Grid>

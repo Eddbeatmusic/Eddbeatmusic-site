@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
 
 import Image from 'next/image';
@@ -16,18 +16,26 @@ const LazyLoadImageListItem = (props) => {
 
   const handleLoad = () => {
     setIsLoaded(true);
-  }
+  };
 
   return (
-    <LazyLoad once style={{display: props.appear ? "block" : "none" }}>
-      <ImageListItem {...props} onLoad={handleLoad} style={{...props.style, opacity: isLoaded ? 1 : 0, transition: "opacity 0.3s ease" }}>
+    <LazyLoad once style={{ display: props.appear ? 'block' : 'none' }}>
+      <ImageListItem
+        {...props}
+        onLoad={handleLoad}
+        style={{
+          ...props.style,
+          opacity: isLoaded ? 1 : 0,
+          transition: 'opacity 0.3s ease',
+        }}
+      >
         {props.children}
       </ImageListItem>
     </LazyLoad>
   );
-}
+};
 
-const ImageDisplay = ({images, filteredText='all', handleSelection}) => {
+const ImageDisplay = ({ images, filteredText = 'all', handleSelection }) => {
   const matches = useMediaQuery('(min-width:600px)');
   const [selected, setSelected] = useState('');
   const [audio, setAudio] = useState(null);
@@ -69,34 +77,45 @@ const ImageDisplay = ({images, filteredText='all', handleSelection}) => {
   };
 
   const handleClick = (index) => {
-    handleSelection(index)
-  }
+    handleSelection(index);
+  };
 
   return (
-    <ImageList sx={{ height: '100%', overflowX: 'hidden' }} cols={matches ? 3 : 2} gap={8}>
-      {images && images.map(({index, item}) => (
-          <LazyLoadImageListItem 
+    <ImageList
+      sx={{ height: '100%', overflowX: 'hidden' }}
+      cols={matches ? 3 : 2}
+      gap={8}
+    >
+      {images &&
+        images.map(({ index, item }) => (
+          <LazyLoadImageListItem
             key={index}
-            appear={(item.category.toLowerCase().includes(filteredText) || filteredText === "all")}
-            style={{cursor: 'pointer', height: '100%'}}
-            position='relative'
+            appear={
+              item.category.toLowerCase().includes(filteredText) ||
+              filteredText === 'all'
+            }
+            style={{ cursor: 'pointer', height: '100%' }}
+            position="relative"
             onMouseEnter={() => setActiveElement(item.title)}
             onMouseLeave={() => setActiveElement(null)}
-            onClick={(e) => {e.preventDefault(); e.stopPropagation(); handleClick(index)}}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleClick(index);
+            }}
           >
-            <Box height="27vw" width="27vw" sx={{position: 'relative'}}>
+            <Box height="27vw" width="27vw" sx={{ position: 'relative' }}>
               <Image
-                layout='fill'
-                objectFit='cover'
+                layout="fill"
+                objectFit="cover"
                 src={item.src}
                 alt={item.altText}
                 loading="lazy"
                 style={{
                   filter:
-                  activeElement === item.title ||
-                  selected === item.title
-                  ? 'grayscale(100)'
-                  : 'none',
+                    activeElement === item.title || selected === item.title
+                      ? 'grayscale(100)'
+                      : 'none',
                 }}
               />
             </Box>
@@ -132,11 +151,11 @@ const ImageDisplay = ({images, filteredText='all', handleSelection}) => {
                   backgroundColor: 'white',
                   backgroundImage:
                     selected === item.title
-                      ? `conic-gradient(#444444 ${(current * 100) / audio?.duration
-                      }%, white ${(current * 100) / audio?.duration
-                      }% ${((audio?.duration - current) * 100) /
-                      audio?.duration
-                      }%)`
+                      ? `conic-gradient(#444444 ${
+                          (current * 100) / audio?.duration
+                        }%, white ${(current * 100) / audio?.duration}% ${
+                          ((audio?.duration - current) * 100) / audio?.duration
+                        }%)`
                       : 'none',
                 }}
               >
@@ -157,15 +176,9 @@ const ImageDisplay = ({images, filteredText='all', handleSelection}) => {
                     justifyContent="center"
                   >
                     <Image
-                      src={
-                        (selected === item.title) & playing
-                          ? pause
-                          : play
-                      }
+                      src={(selected === item.title) & playing ? pause : play}
                       alt={
-                        (selected === item.title) & playing
-                          ? 'pause'
-                          : 'play'
+                        (selected === item.title) & playing ? 'pause' : 'play'
                       }
                       height="40%"
                       width="40%"
@@ -190,9 +203,9 @@ const ImageDisplay = ({images, filteredText='all', handleSelection}) => {
               </Typography>
             </Box>
           </LazyLoadImageListItem>
-      ))}
+        ))}
     </ImageList>
-  )
-}
+  );
+};
 
 export default ImageDisplay;

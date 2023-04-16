@@ -348,3 +348,12 @@ a {
 .filter-portfolio:hover {
   color: #fff;
 }
+
+.reelContainer {
+  background-color: #0000;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}

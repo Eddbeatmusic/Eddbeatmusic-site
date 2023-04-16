@@ -1,6 +1,7 @@
+import React from 'react';
+import { useRouter } from 'next/router';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import { useRouter } from 'next/router';
 
 const LP = () => {
   const router = useRouter();
