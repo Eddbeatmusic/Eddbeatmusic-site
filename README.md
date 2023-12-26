@@ -42,6 +42,7 @@ This is the list of corrections asked.
 
 <details>
   <summary>Home Page</summary>
+
  - [X] Change TopBar grey color #696969
  - [ ] TopBar little bit Bigger Icons
  - [ ] There is a new icon on the top bar (Youtube)
@@ -54,10 +55,12 @@ This is the list of corrections asked.
  - [ ] On the let's talk section the line spacing is a little bit smaller
  - [ ] On the footer the line that separates the sections must be thiner
  - [ ] Add the youtube link on the footer
+
 </details>
 
 <details>
   <summary>Work Page</summary>
+
  - [ ] Correct the whitness of the thumbnail
  - [ ] Thumbnail image get bigger on hover (Optional)
  - [ ] Stop playing music when the project section opens up
@@ -67,30 +70,37 @@ This is the list of corrections asked.
  - [ ] Thumbnail image should get bigger on the hover (optional)
  - [ ] Title thumbnail should underlined when hover
  - [ ] Play button should get bigger on hover and on click back to normal
+
 </details>
 
 <details>
   <summary>Work Page/Work Section</summary>
- - [ ] The video should not be played right away
- - [ ] Make the background darker (Optional)
- - [ ] The modal should be bigger
- - [ ] Remove white margin
- - [ ] The close Icon should be smaller
- - [ ] On the purpose section the left side should of 3 columns, the typography should be smaller, the line spacing should be less
- - [ ] On the playlist preview, title should be all capitalize, icons should be bigger and clearer
- - [ ] Better alignment on the playlist preview section and the interline should be less
- - [ ] Text on the soundtrack sections should be smaller
+
+  - [ ] The video should not be played right away
+  - [ ] Make the background darker (Optional)
+  - [ ] The modal should be bigger
+  - [ ] Remove white margin
+  - [ ] The close Icon should be smaller
+  - [ ] On the purpose section the left side should of 3 columns, the typography should be smaller, the line spacing should be less
+  - [ ] On the playlist preview, title should be all capitalize, icons should be bigger and clearer
+  - [ ] Better alignment on the playlist preview section and the interline should be less
+  - [ ] Text on the soundtrack sections should be smaller
+
 </details>
 
 <details>
   <summary>Services Page</summary>
- - [ ] Title Page should be bigger
- - [ ] Distance between title and subttile should be less
- - [ ] On the table, The title and the text should be separated
- - [ ] The size of the text should be less and remove capitalize
+
+  - [ ] Title Page should be bigger
+  - [ ] Distance between title and subttile should be less
+  - [ ] On the table, The title and the text should be separated
+  - [ ] The size of the text should be less and remove capitalize
+
 </details>
 
 <details>
   <summary>Contact Page</summary>
- - [ ] On the inspired with my work section the Long disc should be align with the text on the right
+
+  - [ ] On the inspired with my work section the Long disc should be align with the text on the right
+  
 </details>
