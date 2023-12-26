@@ -68,7 +68,6 @@ const Footer = () => {
               >
                 <Typography
                   variant="h6"
-                  color={theme.palette.primary.main}
                   sx={{ pr: 5, textTransform: 'uppercase' }}
                 >
                   {item.title}
