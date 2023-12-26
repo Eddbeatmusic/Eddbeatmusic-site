@@ -137,14 +137,26 @@ const Carousel = ({ handleClick, CarouselListGallery }) => {
                 {CarouselListGallery.map(({ item, index }) => (
                   <Box
                     key={index}
-                    marginX={wrapper.current?.clientWidth * 0.0006}
+                    marginX={
+                      wrapper.current?.clientWidth === undefined
+                        ? '0.5vw'
+                        : wrapper.current?.clientWidth * 0.0006
+                    }
                     style={{
-                      width: wrapper.current?.clientWidth * 0.29,
-                      height: wrapper.current?.clientWidth * 0.29,
+                      width:
+                        wrapper.current?.clientWidth === undefined
+                          ? '24vw'
+                          : wrapper.current?.clientWidth * 0.29,
+                      height:
+                        wrapper.current?.clientWidth === undefined
+                          ? '24vw'
+                          : wrapper.current?.clientWidth * 0.29,
                       cursor: 'pointer',
                     }}
                     position="relative"
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
                       handleClick(index);
                     }}
                     onMouseEnter={() => setActiveElement(item.title)}
@@ -188,6 +200,11 @@ const Carousel = ({ handleClick, CarouselListGallery }) => {
                         borderRadius="50%"
                         display="inline-block"
                         border="solid white 0.2vw"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          togglePlay(item);
+                        }}
                         style={{
                           backgroundColor: 'white',
                           backgroundImage:
@@ -211,9 +228,7 @@ const Carousel = ({ handleClick, CarouselListGallery }) => {
                           bgcolor="white"
                           alignContent="center"
                           justifyContent="center"
-                          onClick={() => {
-                            togglePlay(item);
-                          }}
+                          
                         >
                           <Grid item xs={3}></Grid>
                           <Grid

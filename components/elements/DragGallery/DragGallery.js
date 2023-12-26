@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 
 import Image from 'next/image';

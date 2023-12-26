@@ -11,8 +11,8 @@ import ImageOnHover from 'components/elements/ImageOnHover';
 import picture2 from 'assets/pictures/3.png';
 import stamp from 'assets/img/Eduar_Stamp.svg';
 
-import ExperienceImage from './ExperienceObject';
-import AchievementImage from './AchievementObject';
+import ExperienceImage from 'constants/ExperienceObject';
+import AchievementImage from 'constants/AchievementObject';
 import FooterSocial from 'components/modules/Footer/constants/FooterSocial';
 
 const About = () => {
