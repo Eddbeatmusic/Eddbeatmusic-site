@@ -77,7 +77,7 @@ const TopBar = () => {
                         activeItem === item.title ||
                         router.pathname === item.path
                           ? '#FFFFFF'
-                          : '#444444'
+                          : '#696969'
                       }
                       fontFamily="Hebden Grotesque"
                       fontSize={'10.79pt'}
