@@ -15,6 +15,10 @@ const Content = [
     title: 'Twitter',
     href: 'https://twitter.com/eddbeatmusic',
   },
+  {
+    title: 'Youtube',
+    href: 'https://youtube.com/@eddbeatmusic',
+  },
 ];
 
 export default Content;
