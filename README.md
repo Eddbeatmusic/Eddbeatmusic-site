@@ -50,7 +50,8 @@ This is the list of corrections asked.
  - [ ] Change the title of the Reel Section
  - [ ] Add the Play reel following the mouse on the Reel section
  - [ ] On latest releases' section the words should be less separate
- - [ ] Add Arrow on the long player part
+ - [X] Add Arrow on the long player part
+ - [X] The LP underscore should be more aligned to the right
  - [ ] On accelerating valuation Eduardo has change the text and has add another bullet
  - [X] On the let's talk section the line spacing is a little bit smaller
  - [X] On the footer the line that separates the sections must be thinner

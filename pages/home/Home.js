@@ -44,7 +44,7 @@ const Home = () => {
       />
       <Box bgcolor="#000">
         <Grid container justifyContent="center" paddingY="30vh">
-          <Grid item xs={3} sx={{ height: '100%' }}>
+          <Grid item xs={8} md={5} sx={{ height: '100%' }}>
             <LP />
           </Grid>
         </Grid>

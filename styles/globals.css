@@ -133,13 +133,12 @@ a {
 
 .lp-disc {
   position: absolute;
-  position: absolute;
   height: 100%;
   width: 100%;
   z-index: 0;
   background: url('../assets/img/VINILO.png') no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 70%;
   animation: rotation 5s infinite linear;
   -webkit-animation: rotation 5s infinite linear;
   -moz-animation: rotation 5s infinite linear;
@@ -154,13 +153,14 @@ a {
 .lp-component:hover .left-text {
   animation: movingDown 1s;
   -webkit-animation: movingDown 1s;
-  padding-top: 36.6%;
+  padding-top: 36.7%;
 }
 
 .lp-component:hover .right-text {
   animation: movingUp 1s;
   -webkit-animation: movingUp 1s;
-  padding-top: 36.6%;
+  padding-top: 36.7%;
+  background-position: 125% 45%;
 }
 
 .left-text {
@@ -168,12 +168,15 @@ a {
 }
 
 .right-text {
-  transition: padding-top 1s 0.6s;
+  transition: padding-top 1s 0.6s, background-position 1s 0.6s,;
+  background: url('../assets/img/ArrowLink-01.svg') no-repeat;
+  background-size: 50%;
+  background-position: 125% 86%;
 }
 
 .text-left-underscore {
   background-image: linear-gradient(#fff 0 0);
-  background-size: 200% 0.08em; /* .08em is our fixed height, use what you want  */
+  background-size: 200% 0.04em; /* .08em is our fixed height, use what you want  */
   background-position: 200% 100%;
   background-repeat: no-repeat;
   transition: background-position 0.2s 0.3s;
@@ -186,7 +189,7 @@ a {
 
 .text-center-underscore {
   background-image: linear-gradient(#fff 0 0);
-  background-size: 200% 0.08em; /* .08em is our fixed height, use what you want  */
+  background-size: 200% 0.04em; /* .08em is our fixed height, use what you want  */
   background-position: 200% 100%;
   background-repeat: no-repeat;
   transition: background-position 0.3s 0.1s;
@@ -201,7 +204,7 @@ a {
 
 .text-right-underscore {
   background-image: linear-gradient(#fff 0 0);
-  background-size: 200% 0.08em; /* .08em is our fixed height, use what you want  */
+  background-size: 200% 0.04em; /* .08em is our fixed height, use what you want  */
   background-position: 200% 100%;
   background-repeat: no-repeat;
   transition: background-position 0.2s;
@@ -211,7 +214,7 @@ a {
 
 .lp-component:hover .text-right-underscore {
   transition: background-position 0.2s 1.2s;
-  background-position: 100% 100%;
+  background-position: 90% 100%;
 }
 
 @keyframes movingDown {
@@ -235,18 +238,22 @@ a {
 @keyframes movingUp {
   from {
     padding-top: 67%;
+    background-position: 125% 86%;
   }
   to {
     padding-top: 36.6%;
+    background-position: 125% 45%;
   }
 }
 
 @-webkit-keyframes movingUp {
   0% {
     padding-top: 67%;
+    background-position: 125% 86%;
   }
   100% {
     padding-top: 36.6%;
+    background-position: 125% 45%;
   }
 }
 
