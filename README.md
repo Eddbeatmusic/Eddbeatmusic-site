@@ -53,7 +53,7 @@ This is the list of corrections asked.
  - [ ] Add Arrow on the long player part
  - [ ] On accelerating valuation Eduardo has change the text and has add another bullet
  - [X] On the let's talk section the line spacing is a little bit smaller
- - [X] On the footer the line that separates the sections must be thiner
+ - [X] On the footer the line that separates the sections must be thinner
  - [X] Add the youtube link on the footer
 
 </details>
