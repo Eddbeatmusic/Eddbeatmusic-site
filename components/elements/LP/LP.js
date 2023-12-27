@@ -17,17 +17,17 @@ const LP = () => {
         router.push('/work');
       }}
     >
-      <Grid item xs={2} paddingTop="8%" className="left-text">
+      <Grid item xs={3} md={2} paddingTop="8%" paddingLeft="3%" className="left-text">
         <Typography
           variant="subtitle2"
           color="primary"
-          align="right"
+          align="left"
           className="text-left-underscore"
         >
           VIEW
         </Typography>
       </Grid>
-      <Grid item xs={8} sx={{ position: 'relative' }}>
+      <Grid item xs={6} md={8} sx={{ position: 'relative' }}>
         <div className="lp-disc"></div>
         <Typography
           sx={{ marginY: '55%' }}
@@ -39,11 +39,11 @@ const LP = () => {
           ALL
         </Typography>
       </Grid>
-      <Grid item xs={2} paddingTop="67%" className="right-text">
+      <Grid item xs={3} md={2} paddingTop="67%" paddingRight="3%" className="right-text">
         <Typography
           variant="subtitle2"
           color="primary"
-          align="left"
+          align="right"
           className="text-right-underscore"
         >
           MUSIC
