@@ -33,7 +33,7 @@ const theme = createTheme({
     h2: {
       fontFamily: 'Hebden Grotesque',
       fontSize: '2.625rem',
-      lineHeight: '54pt',
+      lineHeight: '50pt',
       letterSpacing: '0.1em',
     },
     h3: {

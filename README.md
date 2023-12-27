@@ -52,9 +52,9 @@ This is the list of corrections asked.
  - [ ] On latest releases' section the words should be less separate
  - [ ] Add Arrow on the long player part
  - [ ] On accelerating valuation Eduardo has change the text and has add another bullet
- - [ ] On the let's talk section the line spacing is a little bit smaller
- - [ ] On the footer the line that separates the sections must be thiner
- - [ ] Add the youtube link on the footer
+ - [X] On the let's talk section the line spacing is a little bit smaller
+ - [X] On the footer the line that separates the sections must be thinner
+ - [X] Add the youtube link on the footer
 
 </details>
 

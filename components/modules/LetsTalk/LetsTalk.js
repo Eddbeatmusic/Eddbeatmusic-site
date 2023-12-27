@@ -7,7 +7,7 @@ import background from 'assets/video/1. ALTA CALIDAD BAJO PESO.mp4';
 const LetsTalk = () => {
   const router = useRouter();
   return (
-    <Box position="relative" width="100%">
+    <Box position="relative" width="100%" height="100%">
       <video autoPlay loop muted width="100%">
         <source src={background} type="video/mp4" />
       </video>
@@ -17,13 +17,13 @@ const LetsTalk = () => {
         flexDirection="column"
         alignItems="center"
         color="white"
-        maxWidth="60rem"
+        maxWidth="48rem"
         textAlign="center"
         top="50%"
         left="50%"
         sx={{ transform: 'translate(-50%, -50%)' }}
       >
-        <Typography variant="h1">
+        <Typography variant="h2">
           I’ve been working remotely since before it was cool
         </Typography>
         <Box

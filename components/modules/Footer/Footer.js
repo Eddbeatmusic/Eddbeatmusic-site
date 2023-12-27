@@ -39,7 +39,7 @@ const Footer = () => {
   }, [activeClipBoard]);
 
   return (
-    <Box bgcolor="#000" position="relative">
+    <Box bgcolor="#000" position="relative" sx={{borderTop: '0.8px solid white'}}>
       <Grid container sx={{ paddingBottom: 6 }}>
         {FooterMenu.map((item, i) => {
           return (
@@ -47,7 +47,7 @@ const Footer = () => {
               item
               xs={12}
               sx={{
-                borderBottom: '1px solid white',
+                borderBottom: '0.8px solid white',
                 paddingLeft: '8%',
                 cursor: pathname === item.path ? 'regular' : 'pointer',
               }}
