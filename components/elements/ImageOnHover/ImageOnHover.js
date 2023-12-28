@@ -70,9 +70,24 @@ const ImageOnHover = ({ id, images = [], text, size, ...props }) => {
           setOpacity(0);
         }}
         onMouseEnter={() => setOpacity(1)}
-        sx={{ zIndex: '50', mixBlendMode: 'difference', cursor: 'default' }}
+        sx={{ 
+          zIndex: '50',
+          mixBlendMode: 'difference',
+          cursor: 'default',
+          position: 'relative',
+        }}
         className="bound"
       >
+        <div 
+          style={{
+            position: 'absolute',
+            top: '-50px',
+            left: '-50px',
+            right: '-50px',
+            bottom: '-50px',
+            pointerEvents: 'auto',
+          }}
+        />
         {props.children}
       </Box>
       <Box className="cursor-move" style={inStyle}></Box>

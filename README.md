@@ -100,6 +100,16 @@ This is the list of corrections asked.
 </details>
 
 <details>
+  <summary>About Page</summary>
+
+  - [ ] Space between Eduardo's photo and Text below
+  - [X] Text below Eduardo's Photo should be bigger and its area should be wider
+  - [X] Hover over text "I'm available..." should activate the underscored action and the pointer should change and on click should open a new page with the following URL www.eddbeatmusic.com/contact
+  - [X] The area where the images appear should be bigger
+
+</details>
+
+<details>
   <summary>Contact Page</summary>
 
   - [ ] On the inspired with my work section the Long disc should be align with the text on the right
