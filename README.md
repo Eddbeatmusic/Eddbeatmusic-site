@@ -46,9 +46,9 @@ This is the list of corrections asked.
  - [X] Change TopBar grey color #696969
  - [ ] TopBar little bit Bigger Icons
  - [ ] There is a new icon on the top bar (Youtube)
- - [ ] Scroll more title should be display right when the user lands on the home page
- - [ ] Change the title of the Reel Section
- - [ ] Add the Play reel following the mouse on the Reel section
+ - [X] Scroll more title should be display right when the user lands on the home page
+ - [X] Change the title of the Reel Section
+ - [X] Add the Play reel following the mouse on the Reel section
  - [ ] On latest releases' section the words should be less separate
  - [X] Add Arrow on the long player part
  - [X] The LP underscore should be more aligned to the right
