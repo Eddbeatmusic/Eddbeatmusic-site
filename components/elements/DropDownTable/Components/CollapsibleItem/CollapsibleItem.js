@@ -33,13 +33,14 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
         alignItems={'flex-end'}
       >
         <Grid container alignItems="baseline">
-          <Grid item xs={5} paddingRight={2}>
+          <Grid item xs={6} paddingRight={2}>
             <Typography
               variant="h5"
               color="secondary"
               sx={{
                 textTransform: 'uppercase',
                 display: 'block',
+                fontSize: "1.3rem"
               }}
             >
               {item.column1}
@@ -59,7 +60,7 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
               Skills
             </Typography>
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <Typography
               variant="subtitle4"
               color="secondary"
@@ -88,14 +89,13 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
           </Grid>
         </Grid>
       </Box>
-      <Collapse in={open} timeout="auto" unmountOnExit sx={{ paddingTop: 2 }}>
-        <Grid container>
-          <Grid item xs={5} paddingRight={2}>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+        <Grid container pt={6}>
+          <Grid item xs={6} paddingRight={2.5}>
             <Typography
-              variant="subtitle4"
+              variant="subtitle5"
               color="secondary"
               sx={{
-                textTransform: 'uppercase',
                 display: 'block',
                 whiteSpace: 'pre-wrap',
               }}
@@ -105,10 +105,9 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
           </Grid>
           <Grid item xs={4} paddingRight={4}>
             <Typography
-              variant="subtitle4"
+              variant="subtitle5"
               color="secondary"
               sx={{
-                textTransform: 'uppercase',
                 display: 'block',
                 whiteSpace: 'pre-wrap',
               }}
@@ -116,12 +115,11 @@ const CollapsibleItem = ({ item, isOpen = false }) => {
               {item.skills}
             </Typography>
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <Typography
-              variant="subtitle4"
+              variant="subtitle5"
               color="secondary"
               sx={{
-                textTransform: 'uppercase',
                 display: 'block',
                 whiteSpace: 'pre-wrap',
               }}

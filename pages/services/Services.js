@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 
 import ImageOnHover from 'components/elements/ImageOnHover';
@@ -20,7 +20,6 @@ const Services = () => {
     const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
     if (event.deltaY > 0) {
       if (!isVisible) {
-        console.log('not visible');
         bottomRef.current.scrollIntoView({ behavior: 'smooth' });
       }
     }
@@ -33,27 +32,28 @@ const Services = () => {
         id="services"
         justifyContent="center"
         alignItems="center"
-        alignContent="space-between"
         height="89vh"
         marginBottom="10rem"
         style={{ backgroundColor: 'black' }}
         onWheel={handleScroll}
       >
-        <Grid item xs="auto" marginTop="35vh">
+        <Grid item xs="auto" marginTop="35vh" marginBottom={0}>
           <ImageOnHover images={DragList.map((obj) => obj.imageSrc)}>
             <Typography
-              variant="h1"
+              variant="h2"
               color="white"
-              letterSpacing="25px"
-              sx={{ fontSize: '6.4rem' }}
+              sx={{ 
+                fontSize: {xs:"6.4rem", md: "7rem", lg: "9rem"},
+                letterSpacing: {md: "0.3em"}
+              }}
             >
               SERVICES
             </Typography>
           </ImageOnHover>
         </Grid>
-        <Grid item xs={12} display={'flex'} justifyContent={'end'}>
-          <Box width="13rem" marginRight="25vw">
-            <Typography variant="subtitle5" color="white">
+        <Grid item xs={10} md={9} lg={7} display={'flex'} justifyContent={'end'} marginTop={0}>
+          <Box width="13rem" >
+            <Typography variant="subtitle5" color="white" sx={{lineHeight: "normal"}}>
               Creativity is at the core of everything
             </Typography>
           </Box>
@@ -65,6 +65,7 @@ const Services = () => {
           display="flex"
           justifyContent="center"
           marginBottom="2rem"
+          alignSelf={'flex-end'}
         >
           <Typography variant="subtitle4" color="white">
             SCROLL

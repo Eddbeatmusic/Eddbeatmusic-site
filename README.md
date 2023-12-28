@@ -92,10 +92,10 @@ This is the list of corrections asked.
 <details>
   <summary>Services Page</summary>
 
-  - [ ] Title Page should be bigger
-  - [ ] Distance between title and subttile should be less
-  - [ ] On the table, The title and the text should be separated
-  - [ ] The size of the text should be less and remove capitalize
+  - [X] Title Page should be bigger
+  - [X] Distance between title and subttile should be less
+  - [X] On the table, The title and the text should be separated
+  - [X] The size of the text should be less and remove capitalize
 
 </details>
 
