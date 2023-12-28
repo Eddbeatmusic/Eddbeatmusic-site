@@ -27,9 +27,9 @@ const About = () => {
         <Typography
           variant="subtitle1"
           color="white"
-          marginX="22vw"
           textAlign="center"
-          marginBottom="5rem"
+          marginBottom="10rem"
+          sx={{marginX: {md: "10vw", xs: "8vw"}}}
         >
           My goal is always to make outstanding sounds and original soundtracks
           that will help amplify the narrative and experience of your project.
@@ -75,14 +75,17 @@ const About = () => {
               </Box>
             </Box>
             <Box width="35rem">
-              <Typography
+              <Link
                 variant="subtitle4"
+                underline="none"
                 color="white"
                 fontStyle="italic"
-                style={{ textDecoration: 'underline' }}
+                className='footer-social'
+                href={"https://www.eddbeatmusic.com/contact"}
+                target="_blank"
               >
                 I’m Available for freelance work, collaborations and workshops.
-              </Typography>
+              </Link>
             </Box>
             <Box width="19rem">
               <Typography variant="h3" color="white" lineHeight={1}>
@@ -92,21 +95,22 @@ const About = () => {
             <Box>
               <Stack spacing={2}>
                 {FooterSocial.map((item, i) => (
-                  <Link
-                    key={i}
-                    variant="subtitle4"
-                    underline="none"
-                    href={item.href}
-                    target="_blank"
-                  >
-                    <Box
-                      component="span"
-                      className="footer-social"
-                      sx={{ marginBottom: '0.07em', paddingRight: '7px' }}
-                    >
-                      {item.title}
-                    </Box>
-                  </Link>
+                  <Box key={i} display="block">
+                    <Link
+                      variant="subtitle4"
+                      underline="none"
+                      href={item.href}
+                      target="_blank"
+                      >
+                      <Box
+                        component="span"
+                        className="footer-social"
+                        sx={{ marginBottom: '0.07em', paddingRight: '7px' }}
+                        >
+                        {item.title}
+                      </Box>
+                    </Link>
+                  </Box>
                 ))}
               </Stack>
             </Box>

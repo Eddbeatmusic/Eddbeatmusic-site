@@ -280,7 +280,7 @@ a {
 }
 
 .footer-social {
-  border-bottom: 0.08em solid #fff;
+  border-bottom: 0.05em solid #fff;
   background-image: linear-gradient(#fff 0 0);
   background-size: 200% 0.07em; /* .08em is our fixed height, use what you want  */
   background-position: 200% 104%;
