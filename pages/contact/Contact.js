@@ -110,7 +110,7 @@ const Contact = () => {
         </Grid>
         <Grid item xs={1}/>
       </Grid>
-      <Box width="100vw">
+      <Box width="100vw" bgcolor={"#000"}>
         <Image
           src={picture}
           alt="Eduardo laughing looking at a screen"
