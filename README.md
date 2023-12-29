@@ -112,6 +112,6 @@ This is the list of corrections asked.
 <details>
   <summary>Contact Page</summary>
 
-  - [ ] On the inspired with my work section the Long disc should be align with the text on the right
+  - [X] On the inspired with my work section the Long disc should be align with the text on the right
   
 </details>
