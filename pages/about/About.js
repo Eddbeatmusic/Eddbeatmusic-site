@@ -190,7 +190,7 @@ const About = () => {
         </Grid>
         <Box bgcolor="#000">
           <Grid container justifyContent="center" marginY="30vh">
-            <Grid item xs={3} sx={{ height: '100%' }}>
+            <Grid item xs={4} md={6} sx={{ height: '100%', cursor: 'pointer' }}>
               <LP />
             </Grid>
           </Grid>

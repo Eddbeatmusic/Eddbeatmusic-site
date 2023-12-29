@@ -145,7 +145,21 @@ a {
   animation-play-state: paused;
 }
 
-.lp-component:hover .lp-disc {
+.lp-disc2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: url('../assets/img/VINILO.png') no-repeat;
+  background-position: center;
+  background-size: 100%;
+  animation: rotation 5s infinite linear;
+  -webkit-animation: rotation 5s infinite linear;
+  -moz-animation: rotation 5s infinite linear;
+  animation-play-state: paused;
+}
+
+.lp-component:hover .lp-disc, .lp-component:hover .lp-disc2 {
   cursor: pointer;
   animation-play-state: running;
 }

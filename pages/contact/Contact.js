@@ -13,23 +13,31 @@ const Contact = () => {
         container
         paddingBottom="10rem"
         style={{ backgroundColor: 'black' }}
+        alignItems={"stretch"}
       >
-        <Grid item xs={6} display="flex" justifyContent="end">
+        <Grid item xs={1}/>
+        <Grid item xs={5} display="flex" justifyContent="end" style={{marginRight: 0}}>
           <Typography
             marginTop={10}
-            variant="h1"
+            variant="h2"
             color="white"
-            fontSize="6rem"
+            fontSize="5.8rem"
             lineHeight={1.2}
-            letterSpacing="20px"
+            letterSpacing="18px"
+            sx={{
+              textAlign: 'right',
+              marginBlockEnd: "0px",
+              textAlignLast: 'right'
+            }}
           >
             INSPIRED
           </Typography>
         </Grid>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6}/>
+        <Grid item xs={1}/>
+        <Grid item xs={5}>
           <Grid container justifyContent="center">
-            <Grid item xs={6} sx={{ height: '100%' }}>
+            <Grid item xs={10} sx={{ height: '100%', cursor: 'pointer', marginTop: 6 }}>
               <Grid
                 container
                 sx={{ backgroundColor: '#000' }}
@@ -41,13 +49,16 @@ const Contact = () => {
                 }}
               >
                 <Grid item xs={12} sx={{ position: 'relative' }}>
-                  <div className="lp-disc"></div>
+                  <div className="lp-disc2"></div>
                   <Typography
-                    sx={{ marginY: '55%', textDecoration: 'underline' }}
+                    sx={{ marginY: '45%', textDecoration: 'underline', zIndex: 50, position:'relative' }}
                     variant="subtitle2"
                     fontSize="1.25rem"
                     color="primary"
                     align="center"
+                    onClick={() => {
+                      router.push('/work');
+                    }}
                   >
                     VIEW ALL MUSIC
                   </Typography>
@@ -56,27 +67,28 @@ const Contact = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <Grid container>
-            <Grid item>
-              <Typography
-                variant="h1"
-                color="white"
-                fontSize="6rem"
-                lineHeight={1.2}
-                letterSpacing="20px"
-              >
-                WITH
-              </Typography>
-              <Typography
-                variant="h1"
-                color="white"
-                fontSize="6rem"
-                lineHeight={1.2}
-                letterSpacing="20px"
-              >
-                MY WORK?
-              </Typography>
+        <Grid item container xs={6}>
+          <Grid item display="flex" flexWrap={"wrap"} >
+            <Typography
+              variant="h2"
+              color="white"
+              fontSize="5.8rem"
+              lineHeight={1.2}
+              letterSpacing="18px"
+              
+            >
+              WITH
+            </Typography>
+            <Typography
+              variant="h2"
+              color="white"
+              fontSize="5.8rem"
+              lineHeight={1.2}
+              letterSpacing="18px"
+            >
+              MY WORK?
+            </Typography>
+            <Box display="block" alignSelf={"flex-end"}>
               <Box marginTop="5rem">
                 <Typography variant="h4" color="white" letterSpacing={0}>
                   MAIL ME
@@ -93,9 +105,10 @@ const Contact = () => {
                   Whatsapp (+57) 321 730 2295
                 </Typography>
               </Box>
-            </Grid>
+            </Box>
           </Grid>
         </Grid>
+        <Grid item xs={1}/>
       </Grid>
       <Box width="100vw">
         <Image
